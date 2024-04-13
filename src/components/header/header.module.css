@@ -1,0 +1,6 @@
+.container {
+  width: 100vw;
+  height: 6vh;
+  background-color: var(--gray-12);
+  color: #000;
+}

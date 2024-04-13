@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Gladiora';
+  src: local('Gladiora'), url(./fonts/Gladiora/gladiora-regular.ttf) format('truetype');
+}
+
+* {
+  font-family: 'Gladiora', sans-serif;
+}
+
+body {
+  margin: 0;
+  /*font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",*/
+  /*  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",*/
+  /*  sans-serif;*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  /*font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",*/
+  /*  monospace;*/
+}
