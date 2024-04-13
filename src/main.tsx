@@ -1,11 +1,10 @@
 import React from "react"
 import { createRoot } from "react-dom/client"
 import { Provider } from "react-redux"
-import App from "./App"
 import { store } from "./app/store"
 import "@radix-ui/themes/styles.css"
 import "./index.css"
-import {Theme, ThemePanel} from '@radix-ui/themes';
+import { Theme, ThemePanel } from "@radix-ui/themes"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import Auth from "./pages/auth"
 import Layout from "./components/layout"
@@ -65,9 +64,14 @@ if (container) {
   root.render(
     <React.StrictMode>
       <Provider store={store}>
-        <Theme accentColor="violet" radius="large" scaling="95%" appearance="dark">
-          <RouterProvider router={router}/>
-          <ThemePanel/>
+        <Theme
+          accentColor="violet"
+          radius="large"
+          scaling="95%"
+          appearance="dark"
+        >
+          <RouterProvider router={router} />
+          <ThemePanel />
         </Theme>
       </Provider>
     </React.StrictMode>,

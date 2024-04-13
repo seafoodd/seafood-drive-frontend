@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Gladiora';
-  src: local('Gladiora'), url(./fonts/Gladiora/gladiora-regular.ttf) format('truetype');
+  font-family: "Gladiora";
+  src:
+    local("Gladiora"),
+    url(./fonts/Gladiora/gladiora-regular.ttf) format("truetype");
 }
 
 * {
-  font-family: 'Gladiora', sans-serif;
+  font-family: "Gladiora", sans-serif;
 }
 
 body {
