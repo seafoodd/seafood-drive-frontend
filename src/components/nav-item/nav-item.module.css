@@ -17,4 +17,9 @@
   justify-content: left;
   gap: 30px;
   display: flex;
+  color: gray;
+}
+
+.text{
+  color: white;
 }

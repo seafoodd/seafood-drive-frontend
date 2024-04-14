@@ -27,8 +27,8 @@ const NavItem: React.FC<Props> = ({ href = "", icon = null, children }) => {
       className={styles.container}
       onClick={() => navigate(href)}
     >
-      <div className={styles.iconTextContainer}>
-        {icon} <p>{children}</p>
+      <div className={styles.iconTextContainer} style={isActive ? {color: "white"} : {}}>
+        {icon} <p className={styles.text}>{children}</p>
       </div>
     </Button>
   )

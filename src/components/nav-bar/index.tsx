@@ -10,11 +10,15 @@ import {
 } from "react-icons/ri"
 import { BsChatLeftDotsFill } from "react-icons/bs"
 import { PiShrimpFill } from "react-icons/pi"
+import { useNavigate } from "react-router-dom"
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className={styles.container}>
-      <div className={styles.logo}>
+      <div className={styles.logo} onClick={() => navigate("/")}>
         <PiShrimpFill size={48} /> seafood drive
       </div>
       <Flex gap={"5"} direction={"column"}>

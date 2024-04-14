@@ -14,16 +14,13 @@ const Layout = () => {
         <div className={styles.navbar}>
           <Navbar />
         </div>
-        <div>
-          <Header />
-          <div>
-            <div className={styles.outlet}>
-              <Outlet />
-            </div>
+        <div className={styles.page}>
+          <div className={styles.header}>
+            <Header />
           </div>
-        </div>
-        <div className={styles.something}>
-          <div className="flex-col flex gap-5">{}</div>
+          <div className={styles.outlet}>
+            <Outlet />
+          </div>
         </div>
       </Container>
     </>

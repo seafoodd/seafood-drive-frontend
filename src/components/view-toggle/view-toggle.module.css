@@ -1,0 +1,38 @@
+
+button {
+    all: unset;
+}
+
+.ToggleGroup {
+    display: inline-flex;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.ToggleGroupItem {
+    background-color: white;
+    color: var(--gray-11);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    font-size: 15px;
+    line-height: 1;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1px;
+}
+.ToggleGroupItem:first-child {
+    margin-left: 0;
+    border-radius: 30px;
+}
+.ToggleGroupItem:last-child {
+    border-radius: 30px;
+}
+.ToggleGroupItem:hover {
+    /*background-color: var(--accent-12);*/
+    cursor:pointer;
+}
+.ToggleGroupItem[data-state='on'] {
+    background-color: var(--accent-9);
+    color: white;
+}

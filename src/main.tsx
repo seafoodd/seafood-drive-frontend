@@ -68,7 +68,7 @@ if (container) {
           accentColor="violet"
           radius="large"
           scaling="95%"
-          appearance="dark"
+          appearance="light"
         >
           <RouterProvider router={router} />
           <ThemePanel />
